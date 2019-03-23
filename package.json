@@ -1,0 +1,21 @@
+{
+  "name": "@typeup/examples",
+  "version": "0.2.0",
+  "description": "Examples for TypeUp.",
+  "author": "Simon Mika <simon@mika.se>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/typeup/examples"
+  },
+  "bugs": {
+    "url": "https://github.com/typeup/examples/issues"
+  },
+  "homepage": "https://github.com/typeup/examples#readme",
+  "scripts": {
+    "build": "typeup html document/document.tup; typeup pdf document/document.tup"
+  },
+  "dependencies": {
+    "@typeup/cli": "^0.2.2"
+  }
+}
