@@ -1,0 +1,61 @@
+template = http://typeup.cogneco.com/templates/document
+class = paper
+title = Document Title
+date = 2015-11-10
+author = John Doe
+# Header Level 1Paragraph A _emphasized text_ a lot of [http://example.com other nonsens]. This paragraph spans
+several lines and so
+it should. And here is %a small bit of code% and another one with a bit of formula: $x^2 + y^2 = z^2$.
+- unordered list
+
+- list item 2
+
+- list item 3
+- sublist
+
+- long list item on
+several lines
+with an additional paragraph
+
+- sublist item 2
+1. ordered subsublist item A
+
+1. item B
+
+- last item
+Paragraph B
+%% c
+for (int i = 0; i < 10; i++)
+	printf("\n")
+
+%%
+An example of what a code block looks like.
+$$
+x^m + y^m = z^m
+%%
+A formula block with a caption.
+%% 
+A code block without language specifier.
+
+%%
+A code block without any language specifier.
+## Header Level 2Paragraph C
+
+Paragraph D
+!figure https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Polygon_types.svg/300px-Polygon_types.svg.png 
+An example of the different definitions of _shape_. The two triangles on the left are congruent, while the third is similar to them. The last triangle is neither [https://en.wikipedia.org/wiki/Similarity_(geometry) similar] nor congruent to any of the others, but it is homeomorphic.
+### Header Level 3Paragraph E
+
+Paragraph F
+!video http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4 
+This is a sample of embedded video.
+===
+# First Header in New ChapterAnother paragraph.
+---
+And a paragraph within a section.
+---
+Another section.
+===
+Another Chapter
+!import ./subdocument 
+# TableThis is a table with a caption.

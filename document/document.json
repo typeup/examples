@@ -1,0 +1,513 @@
+{
+  "class": "Document",
+  "content": [
+    {
+      "class": "Block.Assignment",
+      "name": "template",
+      "value": "http://typeup.cogneco.com/templates/document"
+    },
+    {
+      "class": "Block.Assignment",
+      "name": "class",
+      "value": "paper"
+    },
+    {
+      "class": "Block.Assignment",
+      "name": "title",
+      "value": "Document Title"
+    },
+    {
+      "class": "Block.Assignment",
+      "name": "date",
+      "value": "2015-11-10"
+    },
+    {
+      "class": "Block.Assignment",
+      "name": "author",
+      "value": "John Doe"
+    },
+    {
+      "class": "Block.Heading",
+      "content": [
+        {
+          "class": "Inline.Text",
+          "value": "Header Level 1"
+        }
+      ],
+      "level": 1
+    },
+    {
+      "class": "Block.Paragraph",
+      "content": [
+        {
+          "class": "Inline.Text",
+          "value": "Paragraph A "
+        },
+        {
+          "class": "Inline.Emphasize",
+          "content": [
+            {
+              "class": "Inline.Text",
+              "value": "emphasized text"
+            }
+          ]
+        },
+        {
+          "class": "Inline.Text",
+          "value": " a lot of "
+        },
+        {
+          "class": "Inline.Link",
+          "content": [
+            {
+              "class": "Inline.Text",
+              "value": "other nonsens"
+            }
+          ],
+          "target": "http://example.com"
+        },
+        {
+          "class": "Inline.Text",
+          "value": ". This paragraph spans\n"
+        },
+        {
+          "class": "Inline.Text",
+          "value": "several lines and so\n"
+        },
+        {
+          "class": "Inline.Text",
+          "value": "it should. And here is "
+        },
+        {
+          "class": "Inline.Code",
+          "value": "a small bit of code"
+        },
+        {
+          "class": "Inline.Text",
+          "value": " and another one with a bit of formula: "
+        },
+        {
+          "class": "Inline.Math",
+          "value": "x^2 + y^2 = z^2"
+        },
+        {
+          "class": "Inline.Text",
+          "value": ".\n"
+        }
+      ]
+    },
+    {
+      "class": "Block.UnorderedList",
+      "content": [
+        {
+          "class": "Block.ListItem",
+          "content": [
+            {
+              "class": "Block.Paragraph",
+              "content": [
+                {
+                  "class": "Inline.Text",
+                  "value": "unordered list\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "class": "Block.ListItem",
+          "content": [
+            {
+              "class": "Block.Paragraph",
+              "content": [
+                {
+                  "class": "Inline.Text",
+                  "value": "list item 2\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "class": "Block.ListItem",
+          "content": [
+            {
+              "class": "Block.Paragraph",
+              "content": [
+                {
+                  "class": "Inline.Text",
+                  "value": "list item 3\n"
+                }
+              ]
+            },
+            {
+              "class": "Block.UnorderedList",
+              "content": [
+                {
+                  "class": "Block.ListItem",
+                  "content": [
+                    {
+                      "class": "Block.Paragraph",
+                      "content": [
+                        {
+                          "class": "Inline.Text",
+                          "value": "sublist\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "class": "Block.ListItem",
+                  "content": [
+                    {
+                      "class": "Block.Paragraph",
+                      "content": [
+                        {
+                          "class": "Inline.Text",
+                          "value": "long list item on\n"
+                        },
+                        {
+                          "class": "Inline.Text",
+                          "value": "several lines\n"
+                        }
+                      ]
+                    },
+                    {
+                      "class": "Block.Paragraph",
+                      "content": [
+                        {
+                          "class": "Inline.Text",
+                          "value": "with an additional paragraph\n"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "class": "Block.ListItem",
+                  "content": [
+                    {
+                      "class": "Block.Paragraph",
+                      "content": [
+                        {
+                          "class": "Inline.Text",
+                          "value": "sublist item 2\n"
+                        }
+                      ]
+                    },
+                    {
+                      "class": "Block.OrderedList",
+                      "content": [
+                        {
+                          "class": "Block.ListItem",
+                          "content": [
+                            {
+                              "class": "Block.Paragraph",
+                              "content": [
+                                {
+                                  "class": "Inline.Text",
+                                  "value": "ordered subsublist item A\n"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "class": "Block.ListItem",
+                          "content": [
+                            {
+                              "class": "Block.Paragraph",
+                              "content": [
+                                {
+                                  "class": "Inline.Text",
+                                  "value": "item B\n"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "class": "Block.ListItem",
+          "content": [
+            {
+              "class": "Block.Paragraph",
+              "content": [
+                {
+                  "class": "Inline.Text",
+                  "value": "last item\n"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Block.Paragraph",
+      "content": [
+        {
+          "class": "Inline.Text",
+          "value": "Paragraph B\n"
+        }
+      ]
+    },
+    {
+      "class": "Block.Code",
+      "content": [
+        {
+          "class": "Inline.Text",
+          "value": "An example of what a code block looks like.\n"
+        }
+      ],
+      "language": "c",
+      "value": "for (int i = 0; i < 10; i++)\n\tprintf(\"\\n\")\n"
+    },
+    {
+      "class": "Block.Math",
+      "content": [
+        {
+          "class": "Inline.Text",
+          "value": "A formula block with a caption.\n"
+        }
+      ],
+      "value": "x^m + y^m = z^m"
+    },
+    {
+      "class": "Block.Code",
+      "content": [
+        {
+          "class": "Inline.Text",
+          "value": "A code block without any language specifier.\n"
+        }
+      ],
+      "language": "",
+      "value": "A code block without language specifier.\n"
+    },
+    {
+      "class": "Block.Heading",
+      "content": [
+        {
+          "class": "Inline.Text",
+          "value": "Header Level 2"
+        }
+      ],
+      "level": 2
+    },
+    {
+      "class": "Block.Paragraph",
+      "content": [
+        {
+          "class": "Inline.Text",
+          "value": "Paragraph C\n"
+        }
+      ]
+    },
+    {
+      "class": "Block.Paragraph",
+      "content": [
+        {
+          "class": "Inline.Text",
+          "value": "Paragraph D\n"
+        }
+      ]
+    },
+    {
+      "class": "Block.Figure",
+      "content": [
+        {
+          "class": "Inline.Text",
+          "value": "An example of the different definitions of "
+        },
+        {
+          "class": "Inline.Emphasize",
+          "content": [
+            {
+              "class": "Inline.Text",
+              "value": "shape"
+            }
+          ]
+        },
+        {
+          "class": "Inline.Text",
+          "value": ". The two triangles on the left are congruent, while the third is similar to them. The last triangle is neither "
+        },
+        {
+          "class": "Inline.Link",
+          "content": [
+            {
+              "class": "Inline.Text",
+              "value": "similar"
+            }
+          ],
+          "target": "https://en.wikipedia.org/wiki/Similarity_(geometry)"
+        },
+        {
+          "class": "Inline.Text",
+          "value": " nor congruent to any of the others, but it is homeomorphic.\n"
+        }
+      ],
+      "classes": [],
+      "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Polygon_types.svg/300px-Polygon_types.svg.png"
+    },
+    {
+      "class": "Block.Heading",
+      "content": [
+        {
+          "class": "Inline.Text",
+          "value": "Header Level 3"
+        }
+      ],
+      "level": 3
+    },
+    {
+      "class": "Block.Paragraph",
+      "content": [
+        {
+          "class": "Inline.Text",
+          "value": "Paragraph E\n"
+        }
+      ]
+    },
+    {
+      "class": "Block.Paragraph",
+      "content": [
+        {
+          "class": "Inline.Text",
+          "value": "Paragraph F\n"
+        }
+      ]
+    },
+    {
+      "class": "Block.Video",
+      "content": [
+        {
+          "class": "Inline.Text",
+          "value": "This is a sample of embedded video.\n"
+        }
+      ],
+      "classes": [],
+      "source": "http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4"
+    },
+    {
+      "class": "Block.Chapter",
+      "content": [
+        {
+          "class": "Block.Heading",
+          "content": [
+            {
+              "class": "Inline.Text",
+              "value": "First Header in New Chapter"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "class": "Block.Paragraph",
+          "content": [
+            {
+              "class": "Inline.Text",
+              "value": "Another paragraph.\n"
+            }
+          ]
+        },
+        {
+          "class": "Block.Section",
+          "content": [
+            {
+              "class": "Block.Paragraph",
+              "content": [
+                {
+                  "class": "Inline.Text",
+                  "value": "And a paragraph within a section.\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "class": "Block.Section",
+          "content": [
+            {
+              "class": "Block.Paragraph",
+              "content": [
+                {
+                  "class": "Inline.Text",
+                  "value": "Another section.\n"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "Block.Chapter",
+      "content": [
+        {
+          "class": "Block.Paragraph",
+          "content": [
+            {
+              "class": "Inline.Text",
+              "value": "Another Chapter\n"
+            }
+          ]
+        },
+        {
+          "class": "Block.Import",
+          "source": "./subdocument",
+          "content": {
+            "class": "File",
+            "content": [
+              {
+                "class": "Block.Heading",
+                "content": [
+                  {
+                    "class": "Inline.Text",
+                    "value": "Header in subdocument"
+                  }
+                ],
+                "level": 1
+              },
+              {
+                "class": "Block.Paragraph",
+                "content": [
+                  {
+                    "class": "Inline.Text",
+                    "value": "This is the paragraph imported from the subdocument.\n"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "class": "Block.Heading",
+          "content": [
+            {
+              "class": "Inline.Text",
+              "value": "Table"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "class": "Block.Table",
+          "content": [
+            {
+              "class": "Inline.Text",
+              "value": "This is a table with a caption."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

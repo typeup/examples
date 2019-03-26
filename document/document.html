@@ -1,16 +1,134 @@
 <html>
-						<head>
-							<meta charset="UTF-8" />
-							<title>undefined</title>
-							<meta name="author" content=undefined />
-							<meta name="date" content=2019-3-23 />
-							<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css" />
-							<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
-							<script>hljs.initHighlightingOnLoad();</script>
-							<link rel="stylesheet" type="text/css" href=undefined.css />
-						</head>
-						<body>
-							<header><h1>undefined</h1></header>
-							[object Promise]
-						</body>
-					</html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Document Title</title>
+		<meta name="author" content="John Doe" />
+		<meta name="date" content="2015-11-10" />
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css" />
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+		<link rel="stylesheet" type="text/css" href=paper.css />
+	</head>
+	<body>
+		<header><h1>Document Title</h1></header>
+		<h1>Header Level 1</h1><p>
+	Paragraph A <em>emphasized text</em> a lot of <a href='http://example.com'>other nonsens</a>. This paragraph spans
+several lines and so
+it should. And here is <code>a small bit of code</code> and another one with a bit of formula: <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="x^2 + y^2 = z^2">
+  <msup>
+    <mi>x</mi>
+    <mn>2</mn>
+  </msup>
+  <mo>+</mo>
+  <msup>
+    <mi>y</mi>
+    <mn>2</mn>
+  </msup>
+  <mo>=</mo>
+  <msup>
+    <mi>z</mi>
+    <mn>2</mn>
+  </msup>
+</math>.
+
+</p><p>
+	Paragraph B
+
+</p><figure>
+	<pre><code class=c>
+	for (int i = 0; i < 10; i++)
+	printf("\n")
+
+	</code></pre>
+	<figcaption>An example of what a code block looks like.
+</figcaption>
+</figure>
+<figure>
+	<math xmlns="http://www.w3.org/1998/Math/MathML" alttext="x^m + y^m = z^m">
+  <msup>
+    <mi>x</mi>
+    <mi>m</mi>
+  </msup>
+  <mo>+</mo>
+  <msup>
+    <mi>y</mi>
+    <mi>m</mi>
+  </msup>
+  <mo>=</mo>
+  <msup>
+    <mi>z</mi>
+    <mi>m</mi>
+  </msup>
+</math>
+	<figcaption>A formula block with a caption.
+</figcaption>
+</figure>
+<figure>
+	<pre><code class=>
+	A code block without language specifier.
+
+	</code></pre>
+	<figcaption>A code block without any language specifier.
+</figcaption>
+</figure>
+<h2>Header Level 2</h2><p>
+	Paragraph C
+
+</p><p>
+	Paragraph D
+
+</p><figure>
+	<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Polygon_types.svg/300px-Polygon_types.svg.png' class='' />
+	<figcaption>An example of the different definitions of <em>shape</em>. The two triangles on the left are congruent, while the third is similar to them. The last triangle is neither <a href='https://en.wikipedia.org/wiki/Similarity_(geometry)'>similar</a> nor congruent to any of the others, but it is homeomorphic.
+</figcaption>
+</figure>
+<h3>Header Level 3</h3><p>
+	Paragraph E
+
+</p><p>
+	Paragraph F
+
+</p><figure>
+	<video controls class=''>
+		<source src='http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4' type='video/mp4'>
+	</video>
+	<figcaption>This is a sample of embedded video.
+</figcaption>
+</figure>
+<section class="chapter">
+	<h1>First Header in New Chapter</h1><p>
+	Another paragraph.
+
+</p><section class="section">
+	<p>
+	And a paragraph within a section.
+
+</p>
+</section><section class="section">
+	<p>
+	Another section.
+
+</p>
+</section>
+</section><section class="chapter">
+	<p>
+	Another Chapter
+
+</p><!-- begin import from ./subdocument -->
+					<h1>Header in subdocument</h1><p>
+	This is the paragraph imported from the subdocument.
+
+</p>
+					<!-- end import from ./subdocument --><h1>Table</h1><table class="tr2">
+	<tr>
+	
+</tr><tr>
+	
+</tr>
+	<caption>This is a table with a caption.</caption>
+</table>
+
+</table>
+</section>
+	</body>
+</html>
