@@ -32,7 +32,7 @@ for (int i = 0; i < 10; i++)
 An example of what a code block looks like.
 $$
 x^m + y^m = z^m
-%%
+$$
 A formula block with a caption.
 %% 
 A code block without language specifier.
@@ -40,6 +40,15 @@ A code block without language specifier.
 %%
 A code block without any language specifier.
 ## Header Level 2Paragraph C
+Alpha 
+
+: Definition A
+
+: Definition 1
+
+Beta
+
+: Definition B
 
 Paragraph D
 !figure https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Polygon_types.svg/300px-Polygon_types.svg.png 
@@ -57,5 +66,9 @@ And a paragraph within a section.
 Another section.
 ===
 Another Chapter
-!import ./subdocument 
-# TableThis is a table with a caption.
+!import ./subdocument
+# Table| Header 1  |  Header 2  |
+|---|--:|
+| Cell 1    |  Cell 2    |
+This is a table with a caption.
+

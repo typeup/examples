@@ -311,8 +311,66 @@
       ]
     },
     {
+      "class": "Block.DefinitionList",
+      "content": [
+        {
+          "class": "Block.DefinitionTerm",
+          "content": [
+            {
+              "class": "Inline.Text",
+              "value": "Alpha \n"
+            }
+          ],
+          "data": [
+            {
+              "class": "Block.DefinitionData",
+              "content": [
+                {
+                  "class": "Inline.Text",
+                  "value": "Definition A\n"
+                }
+              ]
+            },
+            {
+              "class": "Block.DefinitionData",
+              "content": [
+                {
+                  "class": "Inline.Text",
+                  "value": "Definition 1\n"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "class": "Block.DefinitionTerm",
+          "content": [
+            {
+              "class": "Inline.Text",
+              "value": "Beta\n"
+            }
+          ],
+          "data": [
+            {
+              "class": "Block.DefinitionData",
+              "content": [
+                {
+                  "class": "Inline.Text",
+                  "value": "Definition B\n"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "class": "Block.Paragraph",
       "content": [
+        {
+          "class": "Inline.Text",
+          "value": "\n"
+        },
         {
           "class": "Inline.Text",
           "value": "Paragraph D\n"
@@ -503,7 +561,63 @@
           "content": [
             {
               "class": "Inline.Text",
-              "value": "This is a table with a caption."
+              "value": "This is a table with a caption.\n"
+            }
+          ],
+          "alignments": [
+            "",
+            "right"
+          ],
+          "rows": [
+            {
+              "class": "Block.TableRow",
+              "content": [
+                {
+                  "class": "Block.TableCell",
+                  "content": [
+                    {
+                      "class": "Inline.Text",
+                      "value": "Header 1 "
+                    }
+                  ],
+                  "header": true
+                },
+                {
+                  "class": "Block.TableCell",
+                  "content": [
+                    {
+                      "class": "Inline.Text",
+                      "value": " Header 2 "
+                    }
+                  ],
+                  "header": true
+                }
+              ]
+            },
+            {
+              "class": "Block.TableRow",
+              "content": [
+                {
+                  "class": "Block.TableCell",
+                  "content": [
+                    {
+                      "class": "Inline.Text",
+                      "value": "Cell 1   "
+                    }
+                  ],
+                  "header": false
+                },
+                {
+                  "class": "Block.TableCell",
+                  "content": [
+                    {
+                      "class": "Inline.Text",
+                      "value": " Cell 2   "
+                    }
+                  ],
+                  "header": false
+                }
+              ]
             }
           ]
         }

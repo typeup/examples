@@ -1,13 +1,16 @@
+<!doctype html>
 <html>
 	<head>
 		<meta charset="UTF-8" />
 		<title>Document Title</title>
 		<meta name="author" content="John Doe" />
 		<meta name="date" content="2015-11-10" />
+		<meta name='identification' content="undefined"/>
+		<meta name='classification' content="undefined"/>
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css" />
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
 		<script>hljs.initHighlightingOnLoad();</script>
-		<link rel="stylesheet" type="text/css" href=paper.css />
+		<link rel="stylesheet" type="text/css" href="http://typeup.cogneco.com/templates/document/paper.css" />
 	</head>
 	<body>
 		<header><h1>Document Title</h1></header>
@@ -35,7 +38,7 @@ it should. And here is <code>a small bit of code</code> and another one with a b
 	Paragraph B
 
 </p><figure>
-	<pre><code class=c>
+	<pre><code class="c">
 	for (int i = 0; i < 10; i++)
 	printf("\n")
 
@@ -64,7 +67,7 @@ it should. And here is <code>a small bit of code</code> and another one with a b
 </figcaption>
 </figure>
 <figure>
-	<pre><code class=>
+	<pre><code class="">
 	A code block without language specifier.
 
 	</code></pre>
@@ -74,8 +77,15 @@ it should. And here is <code>a small bit of code</code> and another one with a b
 <h2>Header Level 2</h2><p>
 	Paragraph C
 
-</p><p>
-	Paragraph D
+</p><dl>
+	<dt>Alpha</dt>
+	<dd>Definition A</dd>
+	<dd>Definition 1</dd>
+	<dt>Beta</dt>
+	<dd>Definition B</dd>
+</dl><p>
+	
+Paragraph D
 
 </p><figure>
 	<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Polygon_types.svg/300px-Polygon_types.svg.png' class='' />
@@ -121,11 +131,20 @@ it should. And here is <code>a small bit of code</code> and another one with a b
 </p>
 					<!-- end import from ./subdocument --><h1>Table</h1><table class="tr2">
 	<tr>
-	
+	<th>
+	Header 1 
+</th><th>
+	 Header 2 
+</th>
 </tr><tr>
-	
+	<td>
+	Cell 1   
+</td><td>
+	 Cell 2   
+</td>
 </tr>
-	<caption>This is a table with a caption.</caption>
+	<caption>This is a table with a caption.
+</caption>
 </table>
 
 </table>

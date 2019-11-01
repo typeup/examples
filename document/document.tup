@@ -42,6 +42,12 @@ A code block without any language specifier.
 ## Header Level 2
 Paragraph C
 
+Alpha 
+: Definition A
+: Definition 1
+Beta
+: Definition B
+
 Paragraph D
 
 !figure https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Polygon_types.svg/300px-Polygon_types.svg.png
