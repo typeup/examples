@@ -1,0 +1,14 @@
+template = https://style.cogneco.com/
+class = document
+
+$symbol$ abc
+
+$$
+a formula
+$$
+def
+
+$$
+another formula
+$$
+ghi
