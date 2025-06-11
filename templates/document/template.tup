@@ -1,0 +1,56 @@
+template = http://typeup.cogneco.com/templates/document
+class = document
+title = Document Title
+date = ${date}
+author = ${author}
+
+# Introduction
+Your introduction text here.
+
+## Background
+Background information goes here.
+
+## Methods
+Methodology description goes here.
+
+### Subsection Example
+- List item 1
+- List item 2
+	- Nested item A
+	- Nested item B
+		1. Ordered subitem 1
+		1. Ordered subitem 2
+
+## Results
+Results description here.
+
+%% python
+# Example code block
+def example():
+    return "Hello, World!"
+%%
+Code block example with syntax highlighting.
+
+$$E = mc^2$$
+Example equation with caption.
+
+| Column 1 | Column 2 |
+|----------|----------:|
+| Left     | Right    |
+Example table with alignment.
+
+!figure path/to/image.png
+Example figure with caption.
+
+===
+# New Chapter
+Chapter content here.
+---
+Section content here.
+---
+Another section here.
+
+/* Use comments
+   for editorial notes */
+
+// Single line comment example

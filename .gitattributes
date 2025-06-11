@@ -1,0 +1,9 @@
+# TypeUp files
+*.tup    text
+*.tup    linguist-language=typeup
+*.tup    linguist-documentation=false
+*.tup    diff=typeup
+
+# Ensure consistent line endings
+* text=auto
+*.tup text eol=lf

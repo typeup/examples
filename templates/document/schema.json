@@ -1,0 +1,233 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TypeUp Document Schema",
+  "description": "Schema for TypeUp document structure",
+  "type": "object",
+  "required": ["metadata", "content"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["template", "class", "title", "date", "author"],
+      "properties": {
+        "template": {
+          "type": "string",
+          "format": "uri"
+        },
+        "class": {
+          "type": "string",
+          "enum": ["document", "paper", "article", "book"]
+        },
+        "title": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "author": {
+          "type": "string"
+        }
+      }
+    },
+    "content": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "$ref": "#/definitions/header" },
+          { "$ref": "#/definitions/paragraph" },
+          { "$ref": "#/definitions/list" },
+          { "$ref": "#/definitions/codeBlock" },
+          { "$ref": "#/definitions/mathBlock" },
+          { "$ref": "#/definitions/table" },
+          { "$ref": "#/definitions/media" },
+          { "$ref": "#/definitions/chapter" },
+          { "$ref": "#/definitions/section" }
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "header": {
+      "type": "object",
+      "required": ["type", "level", "content"],
+      "properties": {
+        "type": { "const": "header" },
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 6
+        },
+        "content": { "type": "string" }
+      }
+    },
+    "paragraph": {
+      "type": "object",
+      "required": ["type", "content"],
+      "properties": {
+        "type": { "const": "paragraph" },
+        "content": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              { "type": "string" },
+              { "$ref": "#/definitions/emphasis" },
+              { "$ref": "#/definitions/inlineCode" },
+              { "$ref": "#/definitions/inlineMath" },
+              { "$ref": "#/definitions/link" }
+            ]
+          }
+        }
+      }
+    },
+    "emphasis": {
+      "type": "object",
+      "required": ["type", "content"],
+      "properties": {
+        "type": { "const": "emphasis" },
+        "content": { "type": "string" }
+      }
+    },
+    "inlineCode": {
+      "type": "object",
+      "required": ["type", "content"],
+      "properties": {
+        "type": { "const": "inlineCode" },
+        "content": { "type": "string" }
+      }
+    },
+    "inlineMath": {
+      "type": "object",
+      "required": ["type", "content"],
+      "properties": {
+        "type": { "const": "inlineMath" },
+        "content": { "type": "string" }
+      }
+    },
+    "link": {
+      "type": "object",
+      "required": ["type", "url", "text"],
+      "properties": {
+        "type": { "const": "link" },
+        "url": { "type": "string", "format": "uri" },
+        "text": { "type": "string" }
+      }
+    },
+    "list": {
+      "type": "object",
+      "required": ["type", "style", "items"],
+      "properties": {
+        "type": { "const": "list" },
+        "style": {
+          "type": "string",
+          "enum": ["unordered", "ordered", "definition"]
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["content"],
+            "properties": {
+              "content": { "type": "string" },
+              "subItems": { "$ref": "#/definitions/list" }
+            }
+          }
+        }
+      }
+    },
+    "codeBlock": {
+      "type": "object",
+      "required": ["type", "content"],
+      "properties": {
+        "type": { "const": "codeBlock" },
+        "language": { "type": "string" },
+        "content": { "type": "string" },
+        "caption": { "type": "string" }
+      }
+    },
+    "mathBlock": {
+      "type": "object",
+      "required": ["type", "content"],
+      "properties": {
+        "type": { "const": "mathBlock" },
+        "content": { "type": "string" },
+        "caption": { "type": "string" }
+      }
+    },
+    "table": {
+      "type": "object",
+      "required": ["type", "headers", "rows"],
+      "properties": {
+        "type": { "const": "table" },
+        "headers": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "alignments": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["left", "center", "right"]
+          }
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "caption": { "type": "string" }
+      }
+    },
+    "media": {
+      "type": "object",
+      "required": ["type", "mediaType", "source"],
+      "properties": {
+        "type": { "const": "media" },
+        "mediaType": {
+          "type": "string",
+          "enum": ["figure", "video"]
+        },
+        "source": { "type": "string" },
+        "caption": { "type": "string" }
+      }
+    },
+    "chapter": {
+      "type": "object",
+      "required": ["type", "content"],
+      "properties": {
+        "type": { "const": "chapter" },
+        "content": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              { "$ref": "#/definitions/header" },
+              { "$ref": "#/definitions/paragraph" },
+              { "$ref": "#/definitions/section" }
+            ]
+          }
+        }
+      }
+    },
+    "section": {
+      "type": "object",
+      "required": ["type", "content"],
+      "properties": {
+        "type": { "const": "section" },
+        "content": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              { "$ref": "#/definitions/paragraph" },
+              { "$ref": "#/definitions/list" },
+              { "$ref": "#/definitions/codeBlock" },
+              { "$ref": "#/definitions/mathBlock" },
+              { "$ref": "#/definitions/table" },
+              { "$ref": "#/definitions/media" }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

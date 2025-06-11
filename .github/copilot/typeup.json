@@ -1,0 +1,40 @@
+{
+    "typeup": {
+        "formatRules": {
+            "styleGuide": "/STYLE_GUIDE.md",
+            "template": "/templates/document/template.tup",
+            "schema": "/templates/document/schema.json"
+        },
+        "suggestions": {
+            "snippets": "/templates/snippets.json",
+            "cheatSheet": "/templates/document/CHEAT_SHEET.md"
+        },
+        "validation": {
+            "enforceStyleGuide": true,
+            "validateSchema": true,
+            "maxHeaderDepth": 6,
+            "requireCaptions": true,
+            "listIndentation": "tab",
+            "lineLength": 100
+        },
+        "documentStructure": {
+            "requireMetadata": true,
+            "metadataOrder": [
+                "template",
+                "class",
+                "title",
+                "date",
+                "author"
+            ],
+            "blankLinesAroundHeaders": true,
+            "blankLinesBetweenSections": true
+        },
+        "formatting": {
+            "emphasis": "underscore",
+            "inlineCode": "percentage",
+            "inlineMath": "dollar",
+            "listMarker": "hyphen",
+            "orderedListMarker": "1."
+        }
+    }
+}
